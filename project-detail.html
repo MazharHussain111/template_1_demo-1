@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Alexander Stone, Executive Creative Director specializing in digital design and branding.">
+    <title>Alexander Stone | Project Details</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Async load for Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+    </noscript>
+
+    <!-- Async load for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+<body data-scroll-container>
+    <!-- Bubble Loader -->
+    <div class="bubble-loader">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo with image (Recommended: 36x36px, square, PNG/WebP format) -->
+            <a href="dark.html" class="logo">
+                <img src="images/logo.png" alt="Alexander Stone Logo" class="logo-image">
+                <span class="logo-text">Alexander Stone</span>
+                <span class="logo-badge">ECD</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="dark.html" class="nav-link active" data-text="Home">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link" data-text="Work">Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+                </ul>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Hero Section -->
+    <section class="section project-hero" data-scroll-section>
+        <div class="section-container">
+            <div class="project-header">
+                <div class="category-container">
+                    <span class="section-subtitle text-reveal" id="project-category">Digital Experience</span>
+                </div>
+                
+                <h1 class="heading-1 project-title text-reveal delay-1" id="project-title">
+                    <span class="title-text">Project Title</span>
+                </h1>
+                
+                <div class="project-meta-grid">
+                    <div class="meta-item text-reveal delay-2">
+                        <div class="meta-content">
+                            <span class="meta-label">Client</span>
+                            <span class="meta-value" id="project-client">Client Name</span>
+                        </div>
+                    </div>
+                    
+                    <div class="meta-item text-reveal delay-3">
+                        <div class="meta-content">
+                            <span class="meta-label">Year</span>
+                            <span class="meta-value" id="project-year">2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="meta-item text-reveal delay-4">
+                        <div class="meta-content">
+                            <span class="meta-label">Services</span>
+                            <span class="meta-value" id="project-services">Services List</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Image Section -->
+    <section class="section" data-scroll-section>
+        <div class="section-container">
+            <div class="project-image-square-container" id="project-image-container">
+                <!-- Image will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="section details-section" data-scroll-section>
+        <div class="section-container">
+            <div class="details-grid">
+                <div class="detail-content">
+                    <div class="detail-item text-reveal">
+                        <h2 class="heading-2">Project Overview</h2>
+                        <p class="text-lead" id="project-overview">
+                            Project overview text...
+                        </p>
+                    </div>
+                    
+                    <div class="detail-item text-reveal delay-1">
+                        <h3 class="heading-3">Challenge</h3>
+                        <p class="text-body" id="project-challenge">
+                            Challenge description...
+                        </p>
+                        <ul class="detail-features" id="project-challenge-points">
+                            <!-- Challenge points will be added by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-item text-reveal delay-2">
+                        <h3 class="heading-3">Solution</h3>
+                        <p class="text-body" id="project-solution">
+                            Solution description...
+                        </p>
+                        <ul class="detail-features" id="project-solution-points">
+                            <!-- Solution points will be added by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-item technical-specs text-reveal delay-3">
+                        <h3 class="heading-3">Technical Implementation</h3>
+                        <div class="specs-grid" id="project-specs">
+                            <!-- Technical specs will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="sidebar-card text-reveal delay-4">
+                        <h3 class="heading-3">Project Highlights</h3>
+                        <ul class="highlight-list" id="project-highlights">
+                            <!-- Highlights will be added by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card text-reveal delay-5">
+                        <h3 class="heading-3">Project Credits</h3>
+                        <ul class="credits-list" id="project-credits">
+                            <!-- Credits will be added by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="section project-navigation" data-scroll-section>
+        <div class="section-container">
+            <div class="navigation-grid">
+                <div class="nav-button prev-project text-reveal">
+                    <a href="#" class="btn btn-secondary" id="prev-project">
+                        <i class="fas fa-chevron-left"></i> Previous Project
+                    </a>
+                </div>
+                <div class="nav-button text-reveal delay-1">
+                   <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-th"></i> View All Projects
+                    </a>
+                </div>
+                <div class="nav-button next-project text-reveal delay-2">
+                    <a href="#" class="btn btn-secondary" id="next-project">
+                        Next Project <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-scroll-section>
+        <div class="section-container">
+            <div class="footer-container">
+                <!-- Logo and About -->
+                <div class="footer-logo">
+                    <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo">
+                    <div>
+                        <span class="footer-logo-text">Alexander Stone</span>
+                        <span class="footer-badge">ECD</span>
+                    </div>
+                    <p class="footer-about">Executive Creative Director specializing in digital design and brand strategy for forward-thinking companies.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="heading-4">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resume.html">Experience</a></li>
+                        <li><a href="projects.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4 class="heading-4">Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                    <p><i class="fas fa-envelope"></i> alexander@example.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <div class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <div class="social-icon">
+                                <i class="fab fa-dribbble"></i>
+                            </div>
+                            <span class="social-tooltip">Dribbble</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Behance">
+                            <div class="social-icon">
+                                <i class="fab fa-behance"></i>
+                            </div>
+                            <span class="social-tooltip">Behance</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <div class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

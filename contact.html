@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Alexander Stone, Executive Creative Director specializing in digital design and branding.">
+    <title>Alexander Stone | Executive Creative Director</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Async load for Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+    </noscript>
+
+    <!-- Async load for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+
+<body data-scroll-container>
+    <!-- Bubble Loader -->
+<div class="bubble-loader">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="dark.html" class="logo">
+                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo" class="logo-image">
+                <span class="logo-text">Alexander Stone</span>
+                <span class="logo-badge">ECD</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="dark.html" class="nav-link active" data-text="Home">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a>
+                    </li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link" data-text="Work">Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+                </ul>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+<!-- Top Banner Section -->
+<section class="section page-banner" id="page-banner" data-scroll-section>
+    <div class="section-container">
+        <div class="page-banner-content">
+            <h1 class="heading-1 text-reveal">Contact</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="dark.html" class="text-small">Home</a></li>
+                    <li><span class="text-small" aria-current="page">Contact</span></li>
+                </ol>
+            </nav>
+            <div class="page-banner-watermark">Contact</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contact Section -->
+<section class="section" id="contact" data-scroll-section>
+    <div class="section-container">
+        <!-- Watermark Background -->
+        <div class="section-watermark">CONTACT</div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+            <span class="section-subtitle text-reveal">Get In Touch</span>
+            <h2 class="heading-2 text-reveal delay-1">Let's Work Together</h2>
+            <p class="text-lead text-reveal delay-2">Have a project in mind or want to discuss creative opportunities? Reach out and let's start a conversation.</p>
+        </div>
+
+        <!-- Contact Content with Large Animated Icons -->
+        <div class="contact-content">
+            <!-- Left Side Large Animated Icon -->
+            <div class="contact-icon-left will-animate rotate-in delay-1">
+                <div class="icon-circle">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </div>
+            
+            <!-- Contact Form Container -->
+            <div class="contact-form-container">
+                <div class="contact-form slide-in-right">
+                    <form id="contactForm" action="https://formspree.io/f/xeokpjkl" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <!-- Success message container (hidden by default) -->
+                        <div id="formSuccess" class="form-success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thank you! Your message has been sent. I'll get back to you soon.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right Side Large Animated Icon -->
+            <div class="contact-icon-right will-animate rotate-in delay-2">
+                <div class="icon-circle">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="footer" data-scroll-section>
+    <div class="section-container">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-logo">
+                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo">
+                <div>
+                    <span class="footer-logo-text">Alexander Stone</span>
+                    <span class="footer-badge">ECD</span>
+                </div>
+                <p class="footer-about">Executive Creative Director specializing in digital design and brand strategy for forward-thinking companies.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4 class="heading-4">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resume.html">Experience</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4 class="heading-4">Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                <p><i class="fas fa-envelope"></i> alexander@example.com</p>
+                <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
