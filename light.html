@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Alexander Stone, Executive Creative Director specializing in digital design and branding.">
+    <meta name="description" content="Portfolio of Alexander Stone, Executive Creative Director specializing in digital design and branding.">
     <title>Alexander Stone | Executive Creative Director</title>
 
     <!-- Preconnect for faster font loading -->
@@ -28,27 +27,34 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </noscript>
 
-    <!-- Your main stylesheet -->
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/light.css">
 </head>
 
 <body data-scroll-container>
-    <!-- Navigation -->
+    <!-- Bubble Loader -->
+    <div class="bubble-loader">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo" class="logo-image">
+            <!-- Logo with image (Recommended: 36x36px, square, PNG/WebP format) -->
+            <a href="dark.html" class="logo">
+                <img src="images/logo.png" alt="Alexander Stone Logo" class="logo-image">
                 <span class="logo-text">Alexander Stone</span>
                 <span class="logo-badge">ECD</span>
             </a>
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active" data-text="Home">Home</a></li>
+                    <li class="nav-item"><a href="dark.html" class="nav-link active" data-text="Home">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a>
-                    </li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link" data-text="Work">Work</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
                 </ul>
@@ -59,202 +65,186 @@
             </nav>
         </div>
     </header>
-    <!-- Hero Section -->
-    <section class="section" id="home" data-scroll-section>
-        <div class="section-container">
-            <!-- Hero Content -->
-            <div class="hero-content">
-                <!-- Watermark Background -->
-                <div class="section-watermark">CREATIVE</div>
 
-                <!-- Hero Text -->
+    <!-- Hero Section -->
+    <section class="section hero-section" id="home" data-scroll-section>
+        <div class="section-container">
+            <div class="hero-content">
+                <!-- Hero Visual -->
+                <div class="hero-visual will-animate fade-in delay-1">
+                    <div class="visual-container">
+                        <!-- Main Image with Frame (Recommended: 420x420px, square, JPG/WebP format) -->
+                        <div class="image-frame">
+                            <div class="image-mask">
+                                <img src="images/profile_img.jpg" alt="Alexander Stone" class="hero-image">
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-1 slide-in-left delay-3">
+                            <span>Creative Vision</span>
+                        </div>
+                        <div class="floating-badge badge-2 slide-in-right delay-4">
+                            <span>Digital Art</span>
+                        </div>
+                          
+                    </div>
+                </div>
+                
+                <!-- Hero Text Content -->
                 <div class="hero-text">
                     <span class="section-subtitle text-reveal">Executive Creative Director</span>
                     <h1 class="heading-1 text-reveal delay-1">
-                        <span class="name-gradient">Ahmad Raza</span>
+                        <span class="name-gradient">Alexander Stone</span>
                     </h1>
-                    <p class="text-lead text-reveal delay-2">Crafting visionary digital experiences that blend
-                        innovative design with strategic thinking to elevate brands beyond expectations.</p>
+                    <p class="text-lead text-reveal delay-2">Crafting visionary digital experiences that blend innovative design with strategic thinking to elevate brands beyond expectations.</p>
 
                     <!-- Hero Buttons -->
                     <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-primary magnetic pulse">
+                        <a href="contact.html" class="btn btn-primary magnetic pulse text-reveal delay-3">
                             <span>Start a Project</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="resume.html" class="btn btn-secondary magnetic">
+                        <a href="resume.html" class="btn btn-secondary magnetic text-reveal delay-4">
                             <span>View Experience</span>
                             <i class="fas fa-scroll"></i>
                         </a>
-                    </div>
-
-                    <!-- Trust Badges -->
-                    <div class="trust-badges fade-in">
-                        <div class="badge-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>18+ Years Experience</span>
-                        </div>
-                        <div class="badge-item">
-                            <i class="fas fa-medal"></i>
-                            <span>36 Awards Won</span>
-                        </div>
-                        <div class="badge-item">
-                            <i class="fas fa-star"></i>
-                            <span>Top Rated Professional</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Image/Visual -->
-                <div class="hero-visual">
-                    <div class="visual-container rotate-in">
-                        <!-- Main Image with Parallax Effect -->
-                        <div class="main-image" data-scroll data-scroll-speed="1">
-                            <div class="image-mask">
-                                <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Ahmad Raza "
-                                    class="hero-image">
-                            </div>
-                            <div class="image-overlay"></div>
-                        </div>
-
-                        <!-- Decorative Elements -->
-                        <div class="decor-element decor-1" data-scroll data-scroll-speed="-1"></div>
-                        <div class="decor-element decor-2" data-scroll data-scroll-speed="0.5"></div>
-                        <div class="decor-element decor-3" data-scroll data-scroll-speed="-0.5"></div>
-
-                        <!-- Floating Shapes -->
-                        <div class="floating-shape shape-1" data-scroll data-scroll-speed="0.3"></div>
-                        <div class="floating-shape shape-2" data-scroll data-scroll-speed="-0.2"></div>
-
-
                     </div>
                 </div>
             </div>
 
             <!-- Hero Stats -->
-            <div class="hero-stats fade-in">
-                <div class="stat-item">
+            <div class="hero-stats">
+                <div class="stat-item text-reveal delay-4">
                     <div class="stat-number animate-number" data-value="18">0</div>
                     <div class="stat-label">Years Experience</div>
+                    <div class="stat-description">Leading creative teams worldwide</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item text-reveal delay-5">
                     <div class="stat-number animate-number" data-value="240">0</div>
-                    <div class="stat-label">Projects Delivered</div>
+                    <div class="stat-label">Projects</div>
+                    <div class="stat-description">Delivered to satisfied clients</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item text-reveal delay-6">
                     <div class="stat-number animate-number" data-value="36">0</div>
-                    <div class="stat-label">Awards Won</div>
+                    <div class="stat-label">Awards</div>
+                    <div class="stat-description">Recognized excellence</div>
                 </div>
-            </div>
-
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator" data-scroll data-scroll-speed="0.5">
-                <div class="indicator-line"></div>
-                <span>Scroll</span>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
     <!-- About Section -->
-    <section class="section" id="about" data-scroll-section>
+    <section class="section about-section" id="about" data-scroll-section>
         <div class="section-container">
             <!-- Watermark Background -->
             <div class="section-watermark">ABOUT</div>
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle text-reveal">Get To Know Me</span>
-                <h2 class="heading-2 text-reveal delay-1">Creative Visionary</h2>
-                <p class="text-lead text-reveal delay-2">With nearly two decades of experience shaping brand narratives,
-                    I bridge the gap between strategic thinking and exceptional design.</p>
+                <span class="section-subtitle text-reveal">My Journey</span>
+                <h2 class="heading-2 text-reveal delay-1">Crafting <span class="highlight-gradient">Digital Experiences</span></h2>
+                <p class="text-lead text-reveal delay-2">18 years transforming brands through innovative design and strategic thinking</p>
             </div>
 
             <!-- About Content -->
             <div class="about-content">
-                <!-- About Image -->
-                <div class="about-image slide-in-left">
-                    <div class="image-wrapper">
-                        <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Alexander Stone Portrait"
-                            class="portrait-image">
-                        <div class="image-decor"></div>
+                <!-- Visual Experience (Recommended: 500x500px, square, JPG/WebP format) -->
+                <div class="about-visual will-animate fade-in delay-1">
+                    <div class="visual-container">
+                        <div class="image-parallax" data-scroll data-scroll-speed="0.5">
+                            <div class="image-mask">
+                                <img src="images/profile_img.jpg" alt="Alexander Stone" class="about-image">
+                            </div>
+                            
+                            <!-- Floating Decorations -->
+                            <div class="floating-decor decor-1 rotate-in delay-2"></div>
+                            <div class="floating-decor decor-2 rotate-in delay-3"></div>
+                            
+                            <!-- Interactive Badges -->
+                            <div class="interactive-badge experience-badge slide-in-left delay-3" data-value="18">
+                                <div class="badge-inner">
+                                    <span class="badge-number">18</span>
+                                    <span class="badge-label">Years</span>
+                                </div>
+                                <div class="badge-decor"></div>
+                            </div>
+                            
+                            <div class="interactive-badge clients-badge slide-in-right delay-4" data-value="150+">
+                                <div class="badge-inner">
+                                    <span class="badge-number">150+</span>
+                                    <span class="badge-label">Clients</span>
+                                </div>
+                                <div class="badge-decor"></div>
+                            </div>
+                            
+                            <div class="interactive-badge awards-badge slide-in-bottom delay-5" data-value="36">
+                                <div class="badge-inner">
+                                    <span class="badge-number">36</span>
+                                    <span class="badge-label">Awards</span>
+                                </div>
+                                <div class="badge-decor"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- About Text -->
-                <div class="about-text slide-in-right">
-                    <h3 class="heading-3">My Philosophy</h3>
-                    <p class="text-body">I believe design should be more than aesthetic—it should solve problems, tell
-                        stories, and create meaningful connections. My approach combines strategic thinking with
-                        meticulous craftsmanship to deliver solutions that drive business results.</p>
-
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <h4 class="heading-4"><i class="fas fa-award"></i> Experience</h4>
-                            <p class="text-small">18+ years leading creative teams at top agencies and Fortune 500
-                                companies.</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4 class="heading-4"><i class="fas fa-lightbulb"></i> Approach</h4>
-                            <p class="text-small">Human-centered design methodology with a focus on measurable impact.
-                            </p>
-                        </div>
-                        <div class="detail-item">
-                            <h4 class="heading-4"><i class="fas fa-rocket"></i> Specialties</h4>
-                            <p class="text-small">Brand strategy, digital experiences, creative direction, and team
-                                leadership.</p>
-                        </div>
+                
+                <!-- Text Content -->
+                <div class="about-text">
+                    <div class="text-block text-reveal delay-2">
+                        <h3 class="heading-3">Visionary Creative Leadership</h3>
+                        <p class="text-body">As an Executive Creative Director with nearly two decades of experience, I specialize in bridging the gap between business objectives and creative excellence. My approach combines strategic thinking with aesthetic innovation to deliver memorable brand experiences.</p>
                     </div>
-
-                    <!-- Skills -->
-                    <div class="skills-section">
-                        <h4 class="heading-4">Core Skills</h4>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span>Creative Direction</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span>Brand Strategy</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
+                    
+                    <div class="text-block text-reveal delay-3">
+                        <h3 class="heading-3">Philosophy & Approach</h3>
+                        <p class="text-body">I believe design should be both beautiful and purposeful. Every pixel, interaction, and animation must serve the user journey while elevating the brand narrative. My work is rooted in research, refined through iteration, and realized with technical precision.</p>
+                    </div>
+                    
+                    <!-- Interactive Timeline -->
+                    <div class="timeline-mini will-animate slide-in-left delay-4">
+                        <div class="timeline-track">
+                            <div class="timeline-milestone active" data-year="2005">
+                                <div class="milestone-marker"></div>
+                                <div class="milestone-content">
+                                    <h4>Started Career</h4>
+                                    <p>Junior Designer at PixelForge</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span>Team Leadership</span>
-                                    <span>92%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 92%"></div>
+                            <div class="timeline-milestone" data-year="2010">
+                                <div class="milestone-marker"></div>
+                                <div class="milestone-content">
+                                    <h4>Creative Director</h4>
+                                    <p>Led rebrand for Fortune 500 client</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span>UX/UI Design</span>
-                                    <span>88%</span>
+                            <div class="timeline-milestone" data-year="2015">
+                                <div class="milestone-marker"></div>
+                                <div class="milestone-content">
+                                    <h4>ECD Promotion</h4>
+                                    <p>Joined Digital Innovations Inc.</p>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                            <div class="timeline-milestone" data-year="2023">
+                                <div class="milestone-marker"></div>
+                                <div class="milestone-content">
+                                    <h4>Present Day</h4>
+                                    <p>Leading global creative teams</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <a href="resume.html" class="btn btn-secondary magnetic" style="margin-top: var(--space-lg);">
+                    </div>      
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section-footer">
+                <div class="cta-content">
+                    <h3 class="cta-title">Want to know more about my creative process?</h3>
+                    <p class="cta-text">Download my complete creative methodology playbook</p>
+                </div>
+                <div class="buttons-container">
+                    <a href="resume.html" class="btn btn-primary magnetic">
                         <span>View Full Resume</span>
                         <i class="fas fa-scroll"></i>
                     </a>
@@ -263,96 +253,74 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Services Section -->
-    <section class="section" id="services" data-scroll-section>
+    <section class="section services-section" id="services" data-scroll-section>
         <div class="section-container">
+            <!-- Watermark Background -->
+            <div class="section-watermark">SERVICES</div>
+
             <!-- Section Header -->
             <div class="section-header">
                 <span class="section-subtitle text-reveal">What I Offer</span>
-                <h2 class="heading-2 text-reveal delay-1">Content Writing Services</h2>
-                <p class="text-lead text-reveal delay-2">Crafting compelling narratives that engage audiences and drive
-                    results through strategic content solutions.</p>
+                <h2 class="heading-2 text-reveal delay-1">My <span class="highlight-gradient">Services</span></h2>
+                <p class="text-lead text-reveal delay-2">Comprehensive creative solutions tailored to your brand's needs</p>
+            </div>
+
+            <!-- View All Button -->
+            <div class="services-view-all">
+                <a href="services.html" class="btn btn-secondary magnetic">
+                    <span>View All Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
             <!-- Services Grid -->
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                        <div class="icon-decor"></div>
+                <div class="service-card will-animate scale-in delay-1">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9H15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9H9.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3 class="heading-3">Creative Copywriting</h3>
-                    <p class="text-body">Persuasive and engaging copy for websites, ads, and marketing materials that
-                        converts readers into customers.</p>
+                    <h3>Creative Direction</h3>
+                    <p>Strategic vision and leadership to align your brand's creative output with business objectives.</p>
                     <ul class="service-features">
-                        <li>Website Content</li>
-                        <li>Ad Campaigns</li>
-                        <li>Email Sequences</li>
-                        <li>Social Media Copy</li>
+                        <li>Brand Strategy Development</li>
+                        <li>Creative Team Leadership</li>
+                        <li>Visual Identity Systems</li>
+                        <li>Cross-Channel Consistency</li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-blog"></i>
-                        <div class="icon-decor"></div>
+                <div class="service-card will-animate scale-in delay-2">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92H19C18.45 20.92 18 20.47 18 19.92V16.92C18 16.37 18.45 15.92 19 15.92H21C21.55 15.92 22 16.37 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 10V13C22 13.55 21.55 14 21 14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H21C21.55 9 22 9.45 22 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 16.92V19.92C15 20.47 14.55 20.92 14 20.92H12C11.45 20.92 11 20.47 11 19.92V16.92C11 16.37 11.45 15.92 12 15.92H14C14.55 15.92 15 16.37 15 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4.08V7.08C22 7.63 21.55 8.08 21 8.08H19C18.45 8.08 18 7.63 18 7.08V4.08C18 3.53 18.45 3.08 19 3.08H21C21.55 3.08 22 3.53 22 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 10V13C15 13.55 14.55 14 14 14H12C11.45 14 11 13.55 11 13V10C11 9.45 11.45 9 12 9H14C14.55 9 15 9.45 15 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16.92V19.92C8 20.47 7.55 20.92 7 20.92H5C4.45 20.92 4 20.47 4 19.92V16.92C4 16.37 4.45 15.92 5 15.92H7C7.55 15.92 8 16.37 8 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 4.08V7.08C8 7.63 7.55 8.08 7 8.08H5C4.45 8.08 4 7.63 4 7.08V4.08C4 3.53 4.45 3.08 5 3.08H7C7.55 3.08 8 3.53 8 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3 class="heading-3">Blog & Article Writing</h3>
-                    <p class="text-body">Well-researched, SEO-optimized articles that establish thought leadership and
-                        drive organic traffic.</p>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive digital experiences that engage users and drive conversions.</p>
                     <ul class="service-features">
-                        <li>Long-form Articles</li>
-                        <li>SEO Blog Posts</li>
-                        <li>Industry Reports</li>
-                        <li>Guest Posts</li>
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
                     </ul>
                 </div>
-
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-book"></i>
-                        <div class="icon-decor"></div>
-                    </div>
-                    <h3 class="heading-3">Technical Writing</h3>
-                    <p class="text-body">Clear, concise documentation that makes complex information accessible to your
-                        target audience.</p>
-                    <ul class="service-features">
-                        <li>User Manuals</li>
-                        <li>White Papers</li>
-                        <li>API Documentation</li>
-                        <li>Technical Guides</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- CTA -->
-            <div class="section-footer">
-                <a href="#contact" class="btn btn-primary magnetic" data-scroll-to>
-                    <span>Get Custom Content Solutions</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
         </div>
     </section>
-
-
 
     <!-- Resume/Experience Section -->
     <section class="section" id="resume" data-scroll-section>
@@ -363,215 +331,106 @@
             <!-- Section Header -->
             <div class="section-header">
                 <span class="section-subtitle text-reveal">Professional Journey</span>
-                <h2 class="heading-2 text-reveal delay-1">My Experience</h2>
-                <p class="text-lead text-reveal delay-2">A timeline of my professional growth and key achievements
-                    throughout my career.</p>
+                <h2 class="heading-2 text-reveal delay-1">My Resume</h2>
+                <p class="text-lead text-reveal delay-2">18+ years of leadership in creative direction and digital design</p>
             </div>
 
-            <!-- Resume Timeline -->
-            <div class="timeline-container">
-                <!-- Timeline Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">2020 - Present</div>
-                    <div class="timeline-content">
-                        <h3 class="heading-3">Executive Creative Director</h3>
-                        <h4 class="heading-4">Digital Innovations Agency</h4>
-                        <p class="text-body">Leading a team of 25+ creatives to develop award-winning digital
-                            experiences for Fortune 500 clients. Spearheaded rebranding initiatives that increased
-                            client revenue by 40% on average.</p>
-                        <ul class="timeline-features">
-                            <li>Increased client retention by 35% through innovative design solutions</li>
-                            <li>Developed agency's creative methodology adopted by all teams</li>
-                            <li>Won 12 industry awards in 3 years</li>
-                        </ul>
+            <!-- Experience Timeline -->
+            <div class="resume-section">
+                <h3 class="heading-3 slide-in-left">Professional Experience</h3>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-period">
+                            <span>2020 - Present</span>
+                            <div class="timeline-badge"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="heading-4">Executive Creative Director</h4>
+                            <p class="text-small">Digital Innovations Inc., New York</p>
+                            <ul class="timeline-list">
+                                <li>Lead a team of 25+ designers, developers, and content creators</li>
+                                <li>Developed brand strategies for Fortune 500 clients</li>
+                                <li>Increased client retention by 42% through innovative solutions</li>
+                                <li>Pioneered AI-assisted design workflows</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Creative Direction</span>
+                                <span>Team Leadership</span>
+                                <span>Brand Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-period">
+                            <span>2015 - 2020</span>
+                            <div class="timeline-badge"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="heading-4">Senior Creative Director</h4>
+                            <p class="text-small">BrandVision Agency, San Francisco</p>
+                            <ul class="timeline-list">
+                                <li>Oversaw all creative output for West Coast division</li>
+                                <li>Developed award-winning campaigns for tech startups</li>
+                                <li>Reduced project timelines by 30% with new processes</li>
+                                <li>Mentored junior designers through training programs</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Art Direction</span>
+                                <span>UX Design</span>
+                                <span>Campaign Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-period">
+                            <span>2010 - 2015</span>
+                            <div class="timeline-badge"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="heading-4">Creative Director</h4>
+                            <p class="text-small">PixelForge Studios, Chicago</p>
+                            <ul class="timeline-list">
+                                <li>Built and managed creative team from 5 to 15 members</li>
+                                <li>Developed agency's signature visual style</li>
+                                <li>Won 12 industry awards including 3 Webby Awards</li>
+                                <li>Established partnerships with major tech platforms</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Visual Design</span>
+                                <span>Brand Identity</span>
+                                <span>Digital Strategy</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Timeline Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">2015 - 2020</div>
-                    <div class="timeline-content">
-                        <h3 class="heading-3">Creative Director</h3>
-                        <h4 class="heading-4">BrandVision Studios</h4>
-                        <p class="text-body">Oversaw all creative output for the agency's key accounts. Transformed the
-                            creative department into a profit center through strategic client work.</p>
-                        <ul class="timeline-features">
-                            <li>Developed brand systems for 8 major corporations</li>
-                            <li>Mentored 5 junior designers who became senior leaders</li>
-                            <li>Increased department revenue by 200% in 3 years</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">2010 - 2015</div>
-                    <div class="timeline-content">
-                        <h3 class="heading-3">Senior Art Director</h3>
-                        <h4 class="heading-4">PixelPerfect Design</h4>
-                        <p class="text-body">Led design teams on complex digital projects for clients in tech and
-                            finance sectors. Established the agency's UX design practice.</p>
-                        <ul class="timeline-features">
-                            <li>Created award-winning campaign for TechGlobal</li>
-                            <li>Pioneered mobile-first design approach</li>
-                            <li>Developed agency's design system still in use today</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">2006 - 2010</div>
-                    <div class="timeline-content">
-                        <h3 class="heading-3">Graphic Designer</h3>
-                        <h4 class="heading-4">Creative Solutions Inc.</h4>
-                        <p class="text-body">Produced print and digital designs for mid-market clients. Quickly promoted
-                            to lead designer role within 18 months.</p>
-                        <ul class="timeline-features">
-                            <li>Designed 50+ marketing campaigns</li>
-                            <li>Developed first interactive designs for the agency</li>
-                            <li>Won "Rising Star" award in 2009</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="education-section">
-                <h3 class="heading-3" style="text-align: center; margin-top: var(--space-xxl);">Education</h3>
-                <div class="education-grid">
-                    <div class="education-item">
-                        <h4 class="heading-4">Master of Fine Arts</h4>
-                        <p class="text-body">School of Visual Arts, New York</p>
-                        <p class="text-small">2004 - 2006</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 class="heading-4">Bachelor of Design</h4>
-                        <p class="text-body">Rhode Island School of Design</p>
-                        <p class="text-small">2000 - 2004</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 class="heading-4">Professional Certifications</h4>
-                        <p class="text-body">UX Design, Creative Leadership, Brand Strategy</p>
-                        <p class="text-small">Various - 2008-2022</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA -->
-            <div class="section-footer">
-                <a href="#" id="download-resume" class="btn btn-primary magnetic">
-                    <span>Download Full Resume</span>
-                    <i class="fas fa-download"></i>
-                </a>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
-
     <!-- Projects Section -->
-    <section class="section" id="projects" data-scroll-section>
+    <section class="section projects-section" id="projects" data-scroll-section>
         <div class="section-container">
             <!-- Watermark Background -->
             <div class="section-watermark">WORK</div>
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle text-reveal">Selected Work</span>
-                <h2 class="heading-2 text-reveal delay-1">Featured Projects</h2>
-                <p class="text-lead text-reveal delay-2">A showcase of my most impactful creative work, blending
-                    strategic thinking with exceptional execution.</p>
+                <span class="section-subtitle text-reveal">My Portfolio</span>
+                <h2 class="heading-2 text-reveal delay-1">Featured <span class="highlight-gradient">Projects</span></h2>
+                <p class="text-body text-reveal delay-2">Selected works showcasing my creative process</p>
             </div>
 
-            <!-- Projects Grid -->
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project_img.png" alt="Nexus Brand Identity Project">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Nexus Brand Identity</h3>
-                                <p class="project-description">Comprehensive rebrand for tech startup including logo,
-                                    visual system, and brand guidelines</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=1" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project_img.png" alt="Aurora Digital Platform">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Aurora Digital Platform</h3>
-                                <p class="project-description">End-to-end UX/UI design for financial services web
-                                    application</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=2" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Project1.png" alt="Voyager Campaign">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Voyager Campaign</h3>
-                                <p class="project-description">Integrated marketing campaign for luxury travel brand</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=3" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Project1.png" alt="Horizon Packaging">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Horizon Packaging</h3>
-                                <p class="project-description">Sustainable packaging design system for consumer goods
-                                </p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=4" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <!-- Project cards will be generated by JavaScript -->
             </div>
-
-            <!-- CTA -->
+                
+            <!-- View All Button -->
             <div class="section-footer">
                 <a href="projects.html" class="btn btn-primary magnetic">
                     <span>View All Projects</span>
@@ -581,102 +440,108 @@
         </div>
     </section>
 
-
-
     <!-- Testimonials Section -->
-    <section class="section" id="testimonials" data-scroll-section>
+    <section class="section testimonials-section" data-scroll-section>
         <div class="section-container">
+            <!-- Watermark Background -->
+            <div class="section-watermark">TESTIMONIALS</div>
+
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle text-reveal">Client Feedback</span>
-                <h2 class="heading-2 text-reveal delay-1">Testimonials</h2>
-                <p class="text-lead text-reveal delay-2">What clients and colleagues say about working with me.</p>
+                <span class="section-subtitle text-reveal">Client Voices</span>
+                <h2 class="heading-2 text-reveal delay-1">What <span class="highlight-gradient">Clients Say</span></h2>
+                <p class="text-lead text-reveal delay-2">Hear from the brands and teams I've collaborated with</p>
             </div>
 
-            <!-- Testimonials Container -->
-            <div class="testimonials-container">
-                <div class="testimonials-track">
-                    <!-- Testimonial Items (duplicated for seamless looping) -->
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="testimonial-text">Alexander transformed our brand identity with his visionary
-                                approach. His strategic thinking combined with exceptional design skills delivered
-                                results beyond our expectations.</p>
+            <!-- Testimonial Rows -->
+            <div class="testimonial-rows">
+                <!-- First Row (Scrolls Left) -->
+                <div class="testimonial-row row-1">
+                    <div class="testimonial-track">
+                        <!-- Testimonial Cards -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"Alexander transformed our brand identity with his visionary approach. The results exceeded all expectations and positioned us as industry leaders."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Sarah Johnson</div>
+                                    <div class="author-title">CEO, Nexus Technologies</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="testimonial-author">
-                            <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Sarah Johnson"
-                                class="author-image">
-                            <div class="author-info">
-                                <h4 class="author-name">Sarah Johnson</h4>
-                                <p class="author-title">Marketing Director, TechGlobal</p>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"Working with Alexander was a game-changer for our digital presence. His strategic thinking and creative execution delivered measurable results."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Michael Chen</div>
+                                    <div class="author-title">CMO, BrandVision</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"The most professional creative director we've worked with. Alexander's team delivered on time, on budget, and with exceptional quality."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Elena Rodriguez</div>
+                                    <div class="author-title">Director, Digital Innovations</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"Alexander's ability to understand complex business challenges and translate them into compelling visual narratives is unparalleled."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">David Wilson</div>
+                                    <div class="author-title">Founder, TechStart</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="testimonial-text">Working with Alexander was a game-changer for our digital
-                                platform. His UX expertise and creative direction resulted in a 40% increase in user
-                                engagement.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Michael Chen" class="author-image">
-                            <div class="author-info">
-                                <h4 class="author-name">Michael Chen</h4>
-                                <p class="author-title">CEO, Aurora Financial</p>
+                </div>
+                
+                <!-- Second Row (Scrolls Right) -->
+                <div class="testimonial-row row-2">
+                    <div class="testimonial-track">
+                        <!-- Testimonial Cards -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"The rebrand Alexander led resulted in a 48% increase in brand recognition and significantly improved our market position."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">James Peterson</div>
+                                    <div class="author-title">Marketing Director</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="testimonial-text">Alexander's leadership brought our creative team to new heights.
-                                His ability to translate business objectives into compelling visual narratives is
-                                unmatched.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Emily Rodriguez"
-                                class="author-image">
-                            <div class="author-info">
-                                <h4 class="author-name">Emily Rodriguez</h4>
-                                <p class="author-title">Creative Director, BrandVision</p>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"Alexander's creative direction elevated our campaign to award-winning status. His attention to detail is remarkable."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Olivia Martinez</div>
+                                    <div class="author-title">Creative Director</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Duplicates for seamless looping -->
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="testimonial-text">Alexander transformed our brand identity with his visionary
-                                approach. His strategic thinking combined with exceptional design skills delivered
-                                results beyond our expectations.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Sarah Johnson"
-                                class="author-image">
-                            <div class="author-info">
-                                <h4 class="author-name">Sarah Johnson</h4>
-                                <p class="author-title">Marketing Director, TechGlobal</p>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"We've worked with many creatives, but Alexander stands out for his ability to merge business strategy with stunning design."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Robert Kim</div>
+                                    <div class="author-title">VP of Product</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="testimonial-text">Working with Alexander was a game-changer for our digital
-                                platform. His UX expertise and creative direction resulted in a 40% increase in user
-                                engagement.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="images/pexels-nkhajotia-1516680 (1).webp" alt="Michael Chen" class="author-image">
-                            <div class="author-info">
-                                <h4 class="author-name">Michael Chen</h4>
-                                <p class="author-title">CEO, Aurora Financial</p>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">"The digital experience Alexander created increased our conversion rate by 32% while maintaining our brand integrity."</div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Jennifer Lee</div>
+                                    <div class="author-title">E-commerce Director</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -685,15 +550,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
+    <!-- Contact Section -->
     <section class="section" id="contact" data-scroll-section>
         <div class="section-container">
             <!-- Watermark Background -->
@@ -703,198 +560,157 @@
             <div class="section-header">
                 <span class="section-subtitle text-reveal">Get In Touch</span>
                 <h2 class="heading-2 text-reveal delay-1">Let's Work Together</h2>
-                <p class="text-lead text-reveal delay-2">Have a project in mind or want to discuss creative
-                    opportunities? Reach out and let's start a conversation.</p>
+                <p class="text-lead text-reveal delay-2">Have a project in mind or want to discuss creative opportunities? Reach out and let's start a conversation.</p>
             </div>
 
             <!-- Contact Content -->
             <div class="contact-content">
-                <!-- Contact Info -->
-                <div class="contact-info slide-in-left">
-                    <h3 class="heading-3">Contact Information</h3>
-                    <p class="text-body">Feel free to reach out through any of these channels. I typically respond
-                        within 24 hours.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4 class="heading-4">Email</h4>
-                                <a href="mailto:alexander@example.com" class="text-body">alexander@example.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4 class="heading-4">Phone</h4>
-                                <a href="tel:+1234567890" class="text-body">+1 (234) 567-890</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4 class="heading-4">Location</h4>
-                                <p class="text-body">New York, NY</p>
-                            </div>
-                        </div>
+                <!-- Left Side Large Animated Icon -->
+                <div class="contact-icon-left will-animate rotate-in delay-1">
+                    <div class="icon-circle">
+                        <i class="fas fa-paper-plane"></i>
                     </div>
-
-                  <div class="social-links">
-    <a href="#" class="social-link" aria-label="LinkedIn">
-        <div class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-        <span class="social-tooltip">LinkedIn</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Dribbble">
-        <div class="social-icon">
-            <i class="fab fa-dribbble"></i>
-        </div>
-        <span class="social-tooltip">Dribbble</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Behance">
-        <div class="social-icon">
-            <i class="fab fa-behance"></i>
-        </div>
-        <span class="social-tooltip">Behance</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Twitter">
-        <div class="social-icon">
-            <i class="fab fa-twitter"></i>
-        </div>
-        <span class="social-tooltip">Twitter</span>
-    </a>
-</div>
                 </div>
+                
+                <!-- Contact Form Container -->
+                <div class="contact-form-container">
+                    <div class="contact-form slide-in-right">
+                        <form id="contactForm" action="https://formspree.io/f/xeokpjkl" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form slide-in-right">
-                    <form id="contactForm" action="https://formspree.io/f/xeokpjkl" method="POST">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control" required>
-                        </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea id="message" name="message" class="form-control" required></textarea>
-                        </div>
+                            <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
 
-                        <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-
-                        <!-- Success message container (hidden by default) -->
-                        <div id="formSuccess" class="form-success-message">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Thank you! Your message has been sent. I'll get back to you soon.</span>
-                        </div>
-                    </form>
+                            <!-- Success message container -->
+                            <div id="formSuccess" class="form-success-message">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Thank you! Your message has been sent. I'll get back to you soon.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Right Side Large Animated Icon -->
+                <div class="contact-icon-right will-animate rotate-in delay-2">
+                    <div class="icon-circle">
+                        <i class="fas fa-envelope"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="footer" data-scroll-section>
-        <div class="section-container">
-            <div class="footer-container">
-                <!-- Logo and About -->
-                <div class="footer-logo">
-                    <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo">
-                    <div>
-                        <span class="footer-logo-text">Alexander Stone</span>
-                        <span class="footer-badge">ECD</span>
+<!-- Footer  -->
+<footer class="footer" data-scroll-section>
+    <div class="footer-container">
+        <!-- Footer Waves Decoration -->
+        <div class="footer-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        
+        <div class="footer-content">
+            <!-- Footer Logo & Info -->
+            <div class="footer-brand">
+                <a href="dark.html" class="footer-logo-link">
+                    <div class="footer-logo-container">
+                        <img src="images/logo.png" alt="Alexander Stone Logo" class="footer-logo-image">
+                        <div class="footer-logo-glow"></div>
                     </div>
-                    <p class="footer-about">Executive Creative Director specializing in digital design and brand
-                        strategy for forward-thinking companies.</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="footer-links">
-                    <h4 class="heading-4">Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="resume.html">Experience</a></li>
-                        <li><a href="projects.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <div class="footer-logo-text">
+                        <span class="footer-logo-name">Alexander Stone</span>
+                        <span class="footer-logo-badge">ECD</span>
+                    </div>
+                </a>
+                
+                <p class="footer-about">Transforming brands through visionary digital experiences and strategic creative direction.</p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer-links-grid">
+                <div class="footer-links-col">
+                    <h5 class="links-title">Navigation</h5>
+                    <ul class="footer-nav">
+                        <li><a href="dark.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="resume.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="projects.html" class="footer-nav-link">Work</a></li>
+                        <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact Info -->
-                <div class="footer-contact">
-                    <h4 class="heading-4">Contact</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-                    <p><i class="fas fa-envelope"></i> alexander@example.com</p>
-                    <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
-
-                    <!-- In the footer section, replace the existing social links with this: -->
-<div class="footer-social">
-    <a href="#" class="social-link" aria-label="LinkedIn">
-        <div class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-        <span class="social-tooltip">LinkedIn</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Dribbble">
-        <div class="social-icon">
-            <i class="fab fa-dribbble"></i>
-        </div>
-        <span class="social-tooltip">Dribbble</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Behance">
-        <div class="social-icon">
-            <i class="fab fa-behance"></i>
-        </div>
-        <span class="social-tooltip">Behance</span>
-    </a>
-    <a href="#" class="social-link" aria-label="Twitter">
-        <div class="social-icon">
-            <i class="fab fa-twitter"></i>
-        </div>
-        <span class="social-tooltip">Twitter</span>
-    </a>
-</div>
+                
+                <div class="footer-links-col">
+                    <h5 class="links-title">Connect</h5>
+                    <div class="footer-contact">
+                        <a href="mailto:alexander@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            alexander@example.com
+                        </a>
+                        <a href="tel:+1234567890" class="contact-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +1 (234) 567-890
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            New York, NY
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
-            </div>
         </div>
-    </footer>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
 
-
-
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="js/script.js" defer></script>
 </body>
-
 </html>
