@@ -216,6 +216,7 @@ function initializeApp() {
   const locoScroll = initSmoothScroll();
   initLoader();
   initBubbleLoader();
+
   
   // Setup navigation and UI components
   setupNavigation();
@@ -232,6 +233,9 @@ function initializeApp() {
   // Setup animations
   animateNumbers();
   setupScrollAnimations();
+
+
+ 
   
   // Initialize project detail page if needed
   if (window.location.pathname.includes('project-detail.html')) {
@@ -253,7 +257,7 @@ function initSmoothScroll() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
-    smoothMobile: true,
+    smoothMobile: false,
     inertia: 0.8,
     getDirection: true,
     smartphone: { smooth: false, breakpoint: 768 },
@@ -921,3 +925,11 @@ function setupProjectNavigation(currentProjectId) {
 
 // Update copyright year automatically
 document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+
+
+
+
+

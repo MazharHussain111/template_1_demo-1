@@ -33,11 +33,12 @@
   <div class="bubble"></div>
   <div class="bubble"></div>
 </div>
-    <!-- Navigation -->
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
+            <!-- Logo with image (Recommended: 36x36px, square, PNG/WebP format) -->
             <a href="dark.html" class="logo">
-                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo" class="logo-image">
+                <img src="images/logo.png" alt="Alexander Stone Logo" class="logo-image">
                 <span class="logo-text">Alexander Stone</span>
                 <span class="logo-badge">ECD</span>
             </a>
@@ -47,8 +48,7 @@
                     <li class="nav-item"><a href="dark.html" class="nav-link active" data-text="Home">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a>
-                    </li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link" data-text="Work">Work</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
                 </ul>
@@ -72,7 +72,7 @@
             <h1 class="heading-1 text-reveal">Projects</h1>
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <ol>
-                    <li><a href="index.html" class="text-small">Home</a></li>
+                    <li><a href="dark.html" class="text-small">Home</a></li>
                     <li><span class="text-small" aria-current="page">Projects</span></li>
                 </ol>
             </nav>
@@ -131,103 +131,24 @@
 
 
 
-    <!-- Projects Section -->
-    <section class="section" id="projects" data-scroll-section>
+     <!-- Projects Section -->
+    <section class="section projects-section" id="projects" data-scroll-section>
         <div class="section-container">
             <!-- Watermark Background -->
             <div class="section-watermark">WORK</div>
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle text-reveal">Selected Work</span>
-                <h2 class="heading-2 text-reveal delay-1">Featured Projects</h2>
-                <p class="text-lead text-reveal delay-2">A showcase of my most impactful creative work, blending
-                    strategic thinking with exceptional execution.</p>
+                <span class="section-subtitle text-reveal">My Portfolio</span>
+                <h2 class="heading-2 text-reveal delay-1">Featured <span class="highlight-gradient">Projects</span></h2>
+                <p class="text-body text-reveal delay-2">Selected works showcasing my creative process</p>
             </div>
 
-            <!-- Projects Grid -->
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project_img.png" alt="Nexus Brand Identity Project">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Nexus Brand Identity</h3>
-                                <p class="project-description">Comprehensive rebrand for tech startup including logo,
-                                    visual system, and brand guidelines</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=1" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project_img.png" alt="Aurora Digital Platform">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Aurora Digital Platform</h3>
-                                <p class="project-description">End-to-end UX/UI design for financial services web
-                                    application</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=2" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Project1.png" alt="Voyager Campaign">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Voyager Campaign</h3>
-                                <p class="project-description">Integrated marketing campaign for luxury travel brand</p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=3" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Project1.png" alt="Horizon Packaging">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title">Horizon Packaging</h3>
-                                <p class="project-description">Sustainable packaging design system for consumer goods
-                                </p>
-                                <div class="project-buttons">
-                                    <a href="project-detail.html?project=4" class="btn btn-secondary btn-sm">View Case
-                                        Study</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <!-- Project cards will be generated by JavaScript -->
             </div>
-
-            <!-- CTA -->
+                
+            <!-- View All Button -->
             <div class="section-footer">
                 <a href="projects.html" class="btn btn-primary magnetic">
                     <span>View All Projects</span>
@@ -243,56 +164,95 @@
 
 
 
-<!-- Footer -->
+<!-- Footer  -->
 <footer class="footer" data-scroll-section>
-    <div class="section-container">
-        <div class="footer-container">
-            <!-- Logo and About -->
-            <div class="footer-logo">
-                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo">
-                <div>
-                    <span class="footer-logo-text">Alexander Stone</span>
-                    <span class="footer-badge">ECD</span>
-                </div>
-                <p class="footer-about">Executive Creative Director specializing in digital design and brand strategy for forward-thinking companies.</p>
-            </div>
-            
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h4 class="heading-4">Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="resume.html">Experience</a></li>
-                    <li><a href="projects.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <h4 class="heading-4">Contact</h4>
-                <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-                <p><i class="fas fa-envelope"></i> alexander@example.com</p>
-                <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+    <div class="footer-container">
+        <!-- Footer Waves Decoration -->
+        <div class="footer-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        
+        <div class="footer-content">
+            <!-- Footer Logo & Info -->
+            <div class="footer-brand">
+                <a href="dark.html" class="footer-logo-link">
+                    <div class="footer-logo-container">
+                        <img src="images/logo.png" alt="Alexander Stone Logo" class="footer-logo-image">
+                        <div class="footer-logo-glow"></div>
+                    </div>
+                    <div class="footer-logo-text">
+                        <span class="footer-logo-name">Alexander Stone</span>
+                        <span class="footer-logo-badge">ECD</span>
+                    </div>
+                </a>
                 
-                <div class="footer-social">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <p class="footer-about">Transforming brands through visionary digital experiences and strategic creative direction.</p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer-links-grid">
+                <div class="footer-links-col">
+                    <h5 class="links-title">Navigation</h5>
+                    <ul class="footer-nav">
+                        <li><a href="dark.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="resume.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="projects.html" class="footer-nav-link">Work</a></li>
+                        <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h5 class="links-title">Connect</h5>
+                    <div class="footer-contact">
+                        <a href="mailto:alexander@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            alexander@example.com
+                        </a>
+                        <a href="tel:+1234567890" class="contact-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +1 (234) 567-890
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            New York, NY
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Copyright -->
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
 </footer>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>

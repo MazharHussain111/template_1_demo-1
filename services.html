@@ -33,11 +33,12 @@
   <div class="bubble"></div>
   <div class="bubble"></div>
 </div>
-    <!-- Navigation -->
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
+            <!-- Logo with image (Recommended: 36x36px, square, PNG/WebP format) -->
             <a href="dark.html" class="logo">
-                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo" class="logo-image">
+                <img src="images/logo.png" alt="Alexander Stone Logo" class="logo-image">
                 <span class="logo-text">Alexander Stone</span>
                 <span class="logo-badge">ECD</span>
             </a>
@@ -47,8 +48,7 @@
                     <li class="nav-item"><a href="dark.html" class="nav-link active" data-text="Home">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a>
-                    </li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-text="Experience">Experience</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link" data-text="Work">Work</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
                 </ul>
@@ -72,7 +72,7 @@
             <h1 class="heading-1 text-reveal">Services</h1>
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <ol>
-                    <li><a href="index.html" class="text-small">Home</a></li>
+                    <li><a href="dark.html" class="text-small">Home</a></li>
                     <li><span class="text-small" aria-current="page">Services</span></li>
                 </ol>
             </nav>
@@ -132,77 +132,108 @@
 
 
     <!-- Services Section -->
-    <section class="section" id="services" data-scroll-section>
+    <section class="section services-section" id="services" data-scroll-section>
         <div class="section-container">
+            <!-- Watermark Background -->
+            <div class="section-watermark">SERVICES</div>
+
             <!-- Section Header -->
             <div class="section-header">
                 <span class="section-subtitle text-reveal">What I Offer</span>
-                <h2 class="heading-2 text-reveal delay-1">Content Writing Services</h2>
-                <p class="text-lead text-reveal delay-2">Crafting compelling narratives that engage audiences and drive
-                    results through strategic content solutions.</p>
+                <h2 class="heading-2 text-reveal delay-1">My <span class="highlight-gradient">Services</span></h2>
+                <p class="text-lead text-reveal delay-2">Comprehensive creative solutions tailored to your brand's needs</p>
             </div>
+
+ 
 
             <!-- Services Grid -->
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                        <div class="icon-decor"></div>
+                <div class="service-card will-animate scale-in delay-1">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9H15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9H9.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3 class="heading-3">Creative Copywriting</h3>
-                    <p class="text-body">Persuasive and engaging copy for websites, ads, and marketing materials that
-                        converts readers into customers.</p>
+                    <h3>Creative Direction</h3>
+                    <p>Strategic vision and leadership to align your brand's creative output with business objectives.</p>
                     <ul class="service-features">
-                        <li>Website Content</li>
-                        <li>Ad Campaigns</li>
-                        <li>Email Sequences</li>
-                        <li>Social Media Copy</li>
+                        <li>Brand Strategy Development</li>
+                        <li>Creative Team Leadership</li>
+                        <li>Visual Identity Systems</li>
+                        <li>Cross-Channel Consistency</li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-blog"></i>
-                        <div class="icon-decor"></div>
+                <div class="service-card will-animate scale-in delay-2">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92H19C18.45 20.92 18 20.47 18 19.92V16.92C18 16.37 18.45 15.92 19 15.92H21C21.55 15.92 22 16.37 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 10V13C22 13.55 21.55 14 21 14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H21C21.55 9 22 9.45 22 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 16.92V19.92C15 20.47 14.55 20.92 14 20.92H12C11.45 20.92 11 20.47 11 19.92V16.92C11 16.37 11.45 15.92 12 15.92H14C14.55 15.92 15 16.37 15 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4.08V7.08C22 7.63 21.55 8.08 21 8.08H19C18.45 8.08 18 7.63 18 7.08V4.08C18 3.53 18.45 3.08 19 3.08H21C21.55 3.08 22 3.53 22 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 10V13C15 13.55 14.55 14 14 14H12C11.45 14 11 13.55 11 13V10C11 9.45 11.45 9 12 9H14C14.55 9 15 9.45 15 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16.92V19.92C8 20.47 7.55 20.92 7 20.92H5C4.45 20.92 4 20.47 4 19.92V16.92C4 16.37 4.45 15.92 5 15.92H7C7.55 15.92 8 16.37 8 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 4.08V7.08C8 7.63 7.55 8.08 7 8.08H5C4.45 8.08 4 7.63 4 7.08V4.08C4 3.53 4.45 3.08 5 3.08H7C7.55 3.08 8 3.53 8 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3 class="heading-3">Blog & Article Writing</h3>
-                    <p class="text-body">Well-researched, SEO-optimized articles that establish thought leadership and
-                        drive organic traffic.</p>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive digital experiences that engage users and drive conversions.</p>
                     <ul class="service-features">
-                        <li>Long-form Articles</li>
-                        <li>SEO Blog Posts</li>
-                        <li>Industry Reports</li>
-                        <li>Guest Posts</li>
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
                     </ul>
                 </div>
-
                 <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-book"></i>
-                        <div class="icon-decor"></div>
+                  <div class="service-card will-animate scale-in delay-2">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92H19C18.45 20.92 18 20.47 18 19.92V16.92C18 16.37 18.45 15.92 19 15.92H21C21.55 15.92 22 16.37 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 10V13C22 13.55 21.55 14 21 14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H21C21.55 9 22 9.45 22 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 16.92V19.92C15 20.47 14.55 20.92 14 20.92H12C11.45 20.92 11 20.47 11 19.92V16.92C11 16.37 11.45 15.92 12 15.92H14C14.55 15.92 15 16.37 15 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4.08V7.08C22 7.63 21.55 8.08 21 8.08H19C18.45 8.08 18 7.63 18 7.08V4.08C18 3.53 18.45 3.08 19 3.08H21C21.55 3.08 22 3.53 22 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 10V13C15 13.55 14.55 14 14 14H12C11.45 14 11 13.55 11 13V10C11 9.45 11.45 9 12 9H14C14.55 9 15 9.45 15 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16.92V19.92C8 20.47 7.55 20.92 7 20.92H5C4.45 20.92 4 20.47 4 19.92V16.92C4 16.37 4.45 15.92 5 15.92H7C7.55 15.92 8 16.37 8 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 4.08V7.08C8 7.63 7.55 8.08 7 8.08H5C4.45 8.08 4 7.63 4 7.08V4.08C4 3.53 4.45 3.08 5 3.08H7C7.55 3.08 8 3.53 8 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3 class="heading-3">Technical Writing</h3>
-                    <p class="text-body">Clear, concise documentation that makes complex information accessible to your
-                        target audience.</p>
+                    <h3>App Developer</h3>
+                    <p>Intuitive digital experiences that engage users and drive conversions.</p>
                     <ul class="service-features">
-                        <li>User Manuals</li>
-                        <li>White Papers</li>
-                        <li>API Documentation</li>
-                        <li>Technical Guides</li>
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
                     </ul>
                 </div>
-
-            </div>
-
-            <!-- CTA -->
-            <div class="section-footer">
-                <a href="#contact" class="btn btn-primary magnetic" data-scroll-to>
-                    <span>Get Custom Content Solutions</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+                <!-- Service 4-->
+                  <div class="service-card will-animate scale-in delay-2">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92H19C18.45 20.92 18 20.47 18 19.92V16.92C18 16.37 18.45 15.92 19 15.92H21C21.55 15.92 22 16.37 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 10V13C22 13.55 21.55 14 21 14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H21C21.55 9 22 9.45 22 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 16.92V19.92C15 20.47 14.55 20.92 14 20.92H12C11.45 20.92 11 20.47 11 19.92V16.92C11 16.37 11.45 15.92 12 15.92H14C14.55 15.92 15 16.37 15 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4.08V7.08C22 7.63 21.55 8.08 21 8.08H19C18.45 8.08 18 7.63 18 7.08V4.08C18 3.53 18.45 3.08 19 3.08H21C21.55 3.08 22 3.53 22 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 10V13C15 13.55 14.55 14 14 14H12C11.45 14 11 13.55 11 13V10C11 9.45 11.45 9 12 9H14C14.55 9 15 9.45 15 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16.92V19.92C8 20.47 7.55 20.92 7 20.92H5C4.45 20.92 4 20.47 4 19.92V16.92C4 16.37 4.45 15.92 5 15.92H7C7.55 15.92 8 16.37 8 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 4.08V7.08C8 7.63 7.55 8.08 7 8.08H5C4.45 8.08 4 7.63 4 7.08V4.08C4 3.53 4.45 3.08 5 3.08H7C7.55 3.08 8 3.53 8 4.08Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Web Developer</h3>
+                    <p>Intuitive digital experiences that engage users and drive conversions.</p>
+                    <ul class="service-features">
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -212,56 +243,95 @@
 
 
 
-<!-- Footer -->
+<!-- Footer  -->
 <footer class="footer" data-scroll-section>
-    <div class="section-container">
-        <div class="footer-container">
-            <!-- Logo and About -->
-            <div class="footer-logo">
-                <img src="images/pexels-codioful-7135120.jpg" alt="Alexander Stone Logo">
-                <div>
-                    <span class="footer-logo-text">Alexander Stone</span>
-                    <span class="footer-badge">ECD</span>
-                </div>
-                <p class="footer-about">Executive Creative Director specializing in digital design and brand strategy for forward-thinking companies.</p>
-            </div>
-            
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h4 class="heading-4">Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="resume.html">Experience</a></li>
-                    <li><a href="projects.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <h4 class="heading-4">Contact</h4>
-                <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-                <p><i class="fas fa-envelope"></i> alexander@example.com</p>
-                <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+    <div class="footer-container">
+        <!-- Footer Waves Decoration -->
+        <div class="footer-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        
+        <div class="footer-content">
+            <!-- Footer Logo & Info -->
+            <div class="footer-brand">
+                <a href="dark.html" class="footer-logo-link">
+                    <div class="footer-logo-container">
+                        <img src="images/logo.png" alt="Alexander Stone Logo" class="footer-logo-image">
+                        <div class="footer-logo-glow"></div>
+                    </div>
+                    <div class="footer-logo-text">
+                        <span class="footer-logo-name">Alexander Stone</span>
+                        <span class="footer-logo-badge">ECD</span>
+                    </div>
+                </a>
                 
-                <div class="footer-social">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <p class="footer-about">Transforming brands through visionary digital experiences and strategic creative direction.</p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer-links-grid">
+                <div class="footer-links-col">
+                    <h5 class="links-title">Navigation</h5>
+                    <ul class="footer-nav">
+                        <li><a href="dark.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="resume.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="projects.html" class="footer-nav-link">Work</a></li>
+                        <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h5 class="links-title">Connect</h5>
+                    <div class="footer-contact">
+                        <a href="mailto:alexander@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            alexander@example.com
+                        </a>
+                        <a href="tel:+1234567890" class="contact-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +1 (234) 567-890
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            New York, NY
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Copyright -->
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; <span id="year"></span> Alexander Stone. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
 </footer>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
