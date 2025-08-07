@@ -216,6 +216,7 @@ function initializeApp() {
   const locoScroll = initSmoothScroll();
   initLoader();
   initBubbleLoader();
+   initThemeSystem();
 
   
   // Setup navigation and UI components
@@ -932,4 +933,85 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 
 
+
+
+// In your script.js file, add these functions:
+
+/**
+ * Initialize theme functionality
+ */
+function initThemeSystem() {
+  const themeToggle = document.querySelector('.theme-toggle');
+  const html = document.documentElement;
+  
+  // Check for saved theme preference or use OS preference
+  const savedTheme = localStorage.getItem('theme') || 
+                    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  
+  // Apply the saved theme
+  if (savedTheme === 'dark') {
+    html.setAttribute('data-theme', 'dark');
+  }
+  
+  // Update URL to reflect current theme
+  updateThemeUrl(savedTheme);
+  
+  // Toggle theme on button click
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      // Set the new theme
+      if (newTheme === 'dark') {
+        html.setAttribute('data-theme', 'dark');
+      } else {
+        html.removeAttribute('data-theme');
+      }
+      
+      // Save preference
+      localStorage.setItem('theme', newTheme);
+      
+      // Update URL
+      updateThemeUrl(newTheme);
+    });
+  }
+  
+  // Check URL for theme parameter on load
+  checkUrlTheme();
+}
+
+/**
+ * Update URL to include theme parameter
+ * @param {string} theme - The current theme ('light' or 'dark')
+ */
+function updateThemeUrl(theme) {
+  const url = new URL(window.location.href);
+  
+  if (theme === 'light') {
+    url.searchParams.delete('theme');
+  } else {
+    url.searchParams.set('theme', theme);
+  }
+  
+  // Update URL without reloading
+  window.history.replaceState({}, '', url.toString());
+}
+
+/**
+ * Check URL for theme parameter and apply if present
+ */
+function checkUrlTheme() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlTheme = urlParams.get('theme');
+  const html = document.documentElement;
+  
+  if (urlTheme === 'dark') {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else if (urlTheme === 'light') {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  }
+}
 
